@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Support — SensorBar</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#1a1a1e;--surface:#2a2a2e;--text:#f5f5f7;--text2:#a1a1a6;--accent:#0a84ff;--border:#3a3a3e}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh;display:flex;flex-direction:column}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.container{max-width:640px;margin:0 auto;padding:0 24px}
+header{padding:20px 0;border-bottom:1px solid var(--border)}
+header .container{display:flex;justify-content:space-between;align-items:center;max-width:720px}
+header nav a{margin-left:24px;color:var(--text2);font-size:14px}header nav a:hover{color:var(--text)}
+.content{padding:60px 0}
+h1{font-size:32px;font-weight:700;margin-bottom:24px}
+h2{font-size:18px;font-weight:600;margin:32px 0 12px}
+p{margin-bottom:16px;color:var(--text2)}
+.contact{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;margin-bottom:32px}
+.contact p{margin-bottom:8px}.contact p:last-child{margin:0}
+.faq details{background:var(--surface);border:1px solid var(--border);border-radius:10px;margin-bottom:8px;padding:0}
+.faq summary{padding:16px 20px;cursor:pointer;font-weight:500;font-size:15px;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:'▸ ';color:var(--text2)}
+.faq details[open] summary::before{content:'▾ '}
+.faq .answer{padding:0 20px 16px;font-size:14px;color:var(--text2)}
+footer{margin-top:auto;padding:32px 0;border-top:1px solid var(--border);text-align:center;font-size:13px;color:var(--text2)}
+footer a{color:var(--text2)}footer a:hover{color:var(--text)}footer span{margin:0 8px}
+</style>
+</head>
+<body>
+<header><div class="container"><strong><a href="./" style="color:inherit">SensorBar</a></strong><nav><a href="./">Home</a><a href="privacy">Privacy</a><a href="support">Support</a></nav></div></header>
+
+<main class="content"><div class="container">
+<h1>Support</h1>
+
+<div class="contact">
+<p><strong>Email:</strong> <a href="mailto:ikey.benz@gmail.com">ikey.benz@gmail.com</a></p>
+<p><strong>Bug Reports:</strong> <a href="https://github.com/ModiApp/projects/issues">GitHub Issues</a></p>
+</div>
+
+<h2>Frequently Asked Questions</h2>
+<div class="faq">
+
+<details><summary>What are the system requirements?</summary>
+<div class="answer">SensorBar requires macOS 13 (Ventura) or later.</div></details>
+
+<details><summary>How do I show or hide modules?</summary>
+<div class="answer">Click the SensorBar icon in your menu bar to open the dropdown, then use the settings to toggle individual modules (CPU, Memory, Network, Disk, Battery, Sensors) on or off.</div></details>
+
+<details><summary>Does SensorBar affect battery life?</summary>
+<div class="answer">SensorBar is designed to be lightweight. It uses minimal CPU and energy. You can also adjust the update interval in settings to further reduce resource usage.</div></details>
+
+<details><summary>Does SensorBar collect any data?</summary>
+<div class="answer">No. SensorBar collects zero data, makes no network connections, and contains no analytics or tracking. See our <a href="privacy">Privacy Policy</a> for details.</div></details>
+
+<details><summary>How do I uninstall SensorBar?</summary>
+<div class="answer">Simply drag SensorBar from your Applications folder to the Trash, or right-click and select "Move to Trash."</div></details>
+
+</div>
+</div></main>
+
+<footer><div class="container">
+<a href="privacy">Privacy Policy</a><span>·</span><a href="support">Support</a><span>·</span>&copy; 2026 SensorBar
+</div></footer>
+</body>
+</html>

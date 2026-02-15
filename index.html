@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SensorBar — System Monitor for Menu Bar</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#1a1a1e;--surface:#2a2a2e;--text:#f5f5f7;--text2:#a1a1a6;--accent:#0a84ff;--border:#3a3a3e}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.container{max-width:720px;margin:0 auto;padding:0 24px}
+
+header{padding:20px 0;border-bottom:1px solid var(--border)}
+header .container{display:flex;justify-content:space-between;align-items:center}
+header nav a{margin-left:24px;color:var(--text2);font-size:14px}header nav a:hover{color:var(--text)}
+
+.hero{text-align:center;padding:80px 0 60px}
+.hero h1{font-size:48px;font-weight:700;letter-spacing:-0.5px}
+.hero .tagline{font-size:20px;color:var(--text2);margin-top:8px}
+.badge{margin-top:32px}
+.badge a img{height:48px;border-radius:12px}
+
+.features{padding:40px 0 60px}
+.features h2{font-size:20px;font-weight:600;margin-bottom:24px;text-align:center;color:var(--text2)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px}
+.card .icon{font-size:28px;margin-bottom:8px}
+.card h3{font-size:16px;font-weight:600}
+.card p{font-size:14px;color:var(--text2);margin-top:4px}
+
+footer{margin-top:auto;padding:32px 0;border-top:1px solid var(--border);text-align:center;font-size:13px;color:var(--text2)}
+footer a{color:var(--text2)}footer a:hover{color:var(--text)}
+footer span{margin:0 8px}
+</style>
+</head>
+<body>
+<header><div class="container"><strong>SensorBar</strong><nav><a href="./">Home</a><a href="privacy">Privacy</a><a href="support">Support</a></nav></div></header>
+
+<main>
+<section class="hero"><div class="container">
+<h1>SensorBar</h1>
+<p class="tagline">System Monitor for Menu Bar</p>
+<p class="badge"><a href="https://apps.apple.com/app/sensorbar/id6742114990"><img src="https://tools.applemediaservices.com/api/badges/download-on-the-mac-app-store/white/en-us?size=250x83" alt="Download on the Mac App Store"></a></p>
+</div></section>
+
+<section class="features"><div class="container">
+<h2>Everything you need, right in your menu bar</h2>
+<div class="grid">
+<div class="card"><div class="icon">🖥</div><h3>CPU</h3><p>Real-time usage, per-core breakdown, and frequency.</p></div>
+<div class="card"><div class="icon">🧠</div><h3>Memory</h3><p>RAM pressure, swap usage, and memory breakdown.</p></div>
+<div class="card"><div class="icon">🌐</div><h3>Network</h3><p>Upload and download speeds at a glance.</p></div>
+<div class="card"><div class="icon">💾</div><h3>Disk</h3><p>Storage capacity and read/write activity.</p></div>
+<div class="card"><div class="icon">🔋</div><h3>Battery</h3><p>Charge level, health, cycle count, and power draw.</p></div>
+<div class="card"><div class="icon">🌡</div><h3>Sensors</h3><p>Temperature and fan speed monitoring.</p></div>
+</div>
+</div></section>
+</main>
+
+<footer><div class="container">
+<a href="privacy">Privacy Policy</a><span>·</span><a href="support">Support</a><span>·</span>&copy; 2026 SensorBar
+</div></footer>
+</body>
+</html>
