@@ -41,19 +41,21 @@ footer span{margin:0 8px}
 
 <p>SensorBar runs in the App Sandbox for security, which means it can't directly read hardware temperature sensors (SMC). The SensorBarHelper is a lightweight background service that reads sensor data and passes it to the app.</p>
 
-<a class="download-btn" href="downloads/SensorBarHelper.zip">⬇ Download SensorBarHelper</a>
+<a class="download-btn" href="downloads/SensorBarHelper.pkg">⬇ Download Installer (.pkg)</a>
 <p style="margin-top:8px"><a href="https://github.com/ModiApp/sensorbar-helper">View source code on GitHub</a></p>
 
 <h2>Installation</h2>
 <ol>
-<li>Download and unzip <strong>SensorBarHelper.zip</strong></li>
-<li>Open <strong>Terminal</strong></li>
-<li>Navigate to the unzipped folder:
-<pre><code>cd ~/Downloads/SensorBarHelper</code></pre></li>
-<li>Run the install script:
-<pre><code>sudo ./install.sh</code></pre></li>
+<li>Download <strong>SensorBarHelper.pkg</strong></li>
+<li>Double-click to open the installer</li>
+<li>If macOS blocks it, go to <strong>System Settings → Privacy &amp; Security</strong> and click <strong>"Open Anyway"</strong></li>
+<li>Follow the prompts — enter your password when asked</li>
 <li>Restart SensorBar — temperature sensors will appear automatically</li>
 </ol>
+
+<div class="note">
+<strong>Prefer the terminal?</strong> <a href="downloads/SensorBarHelper.zip">Download the zip</a> and run <code>sudo ./install.sh</code> from the unzipped folder.
+</div>
 
 <div class="note">
 <strong>Why sudo?</strong> The helper needs root access to read hardware temperature sensors via the SMC (System Management Controller). It runs as a LaunchDaemon — a standard macOS background service managed by the system.
